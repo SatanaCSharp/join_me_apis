@@ -8,7 +8,7 @@ module.exports = {
 
     db: {
         mongo: {
-            url: 'mongodb://localhost:27019/join_me'
+            url: 'mongodb://localhost:27017/join_me'
         },
     },
 
