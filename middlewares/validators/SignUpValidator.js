@@ -15,10 +15,10 @@ const passwordConfirmationValidator = check('passwordConfirmation').custom((valu
     return value === req.body.password;
 }).withMessage('Password confirmation does not match password');
 
-module.exports = {
+module.exports =[
     firstNameValidator,
     lastNameValidator,
     emailValidator,
     passwordValidator,
     passwordConfirmationValidator
-};
+];

@@ -6,7 +6,7 @@ const emailValidator = check('email').isEmail().custom(async (email) => {
 }).withMessage('No such user with target email');
 
 const passwordValidator = check('password').isLength({min: 6});
-module.exports = {
+module.exports = [
     emailValidator,
     passwordValidator
-};
+];
