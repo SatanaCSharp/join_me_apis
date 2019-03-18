@@ -55,11 +55,11 @@ UserSchema.methods.setJWT = function () {
     }, secret)
 };
 UserSchema.methods.authJSON = function () {
-    return JSON.stringify({
+    return {
         _id: this._id,
         email: this.email,
         token: this.setJWT()
-    })
+    }
 };
 const User = mongoose.model('User', UserSchema);
 module.exports = User;
