@@ -4,6 +4,7 @@ const router = express.Router();
 router.use('/', require('./greetings'));
 router.use('/auth', require('./auth'));
 router.use('/events', require('./events'));
+router.use('/categories', require('./categories'));
 router.all('*', (req, res) => {
     res.status(404).send({msg: 'Not found'});
 });
