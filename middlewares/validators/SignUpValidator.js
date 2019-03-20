@@ -1,5 +1,5 @@
 const {check} = require('express-validator/check');
-const UsersRepository = require('../../repositories/UserRepository');
+const UsersRepository = require('../../repositories/UsersRepository');
 
 const firstNameValidator = check('firstName').isLength({max: 256, min: 2});
 const lastNameValidator = check('lastName').isLength({max: 256, min: 2});

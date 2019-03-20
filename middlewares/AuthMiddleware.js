@@ -3,7 +3,8 @@ const secret = require('../config').secret;
 
 const getHeadersToken = (req) => {
     const {headers: {authorization}} = req;
-    if (authorization && authorization.split(' ')[0] === 'Token') {
+    console.log(authorization.split(' ')[0]);
+    if (authorization && authorization.split(' ')[0] === 'Bearer') {
         return authorization.split(' ')[1];
     }
     return null
