@@ -6,7 +6,7 @@ router.use('/auth', require('./auth'));
 router.use('/events', require('./events'));
 router.use('/categories', require('./categories'));
 router.use('/tags', require('./tags'));
-
+router.user('/user', require('./user'));
 router.all('*', (req, res) => {
     res.status(404).send({msg: 'Not found'});
 });

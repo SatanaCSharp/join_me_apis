@@ -18,6 +18,10 @@ const UserSchema = new Schema({
         type: String,
         required: true,
     },
+    categories:[{
+       type: Schema.Types.ObjectId,
+       ref: 'Category'
+    }],
     hash: String,
     salt: String,
     createdAt: {
