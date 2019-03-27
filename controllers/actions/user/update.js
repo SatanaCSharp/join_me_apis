@@ -1,4 +1,5 @@
 const UsersRepository = require('../../../repositories/UsersRepository');
+const Show = require('./show');
 
 async function action(req, res) {
     try {
@@ -8,6 +9,7 @@ async function action(req, res) {
             email: req.body.email,
             categories: req.body.categories
         });
+        await Show(req, res);
     } catch (err) {
         res.sendStatus(500);
     }
