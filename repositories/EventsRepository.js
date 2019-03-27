@@ -16,7 +16,8 @@ async function store(eventData) {
         description: eventData.description,
         dateTime: eventData.dateTime,
         user: eventData.user,
-        address: eventData.address
+        address: eventData.address,
+        tags: eventData.tags
     });
     return await event.save()
 }
@@ -27,6 +28,7 @@ async function update(eventId, eventData) {
     event.description = eventData.description;
     event.dateTime = eventData.dateTime;
     event.address = eventData.address;
+    event.tags = eventData.tags;
     return await event.save();
 }
 

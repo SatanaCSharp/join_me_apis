@@ -19,6 +19,13 @@ const EventSchema = new Schema({
         ref: 'User',
         required: true
     },
+    tags: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Tag',
+            required: true
+        }
+    ],
     address: {
         type: Schema.Types.ObjectId,
         ref: 'Address',
