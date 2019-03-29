@@ -10,6 +10,7 @@ async function action(req, res) {
             description: req.body.description,
             dateTime: req.body.dateTime,
             user: req.user.id,
+            tags: req.body.tags,
             address: address['_id']
         });
         await Index(req, res);

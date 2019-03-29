@@ -24,6 +24,11 @@ const EventSchema = new Schema({
         ref: 'Address',
         required: true
     },
+    tags: [{
+        type: Schema.Types.ObjectId,
+        ref: 'Tag',
+        required: true
+    }],
     created: {
         type: Date,
         default: Date.now,

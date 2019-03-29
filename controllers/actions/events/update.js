@@ -8,7 +8,8 @@ async function action(req, res) {
             name: req.body.name,
             description: req.body.description,
             dateTime: req.body.dateTime,
-            address: req.body.address._id
+            address: req.body.address._id,
+            tags: req.body.tags
         });
 
         await AddressRepository.update(req.body.address._id, {
