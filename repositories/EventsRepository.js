@@ -27,8 +27,8 @@ async function update(eventId, eventData) {
     event.name = eventData.name;
     event.description = eventData.description;
     event.dateTime = eventData.dateTime;
-    event.address = eventData.address;
     event.tags = eventData.tags;
+    event.address = eventData.address;
     return await event.save();
 }
 

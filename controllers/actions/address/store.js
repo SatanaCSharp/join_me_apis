@@ -2,7 +2,7 @@ const AddressRepository = require('../../../repositories/AddressRepository');
 
 async function action(req, res) {
     try {
-      return  await AddressRepository.store({
+        return await AddressRepository.store({
             city: req.body.address.city,
             place: req.body.address.place
         });

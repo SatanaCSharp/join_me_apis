@@ -10,8 +10,8 @@ async function action(req, res) {
             description: req.body.description,
             dateTime: req.body.dateTime,
             user: req.user.id,
-            address: address['_id'],
-            tags: req.body.tags
+            tags: req.body.tags,
+            address: address['_id']
         });
         await Index(req, res);
     } catch (err) {
