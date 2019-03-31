@@ -8,6 +8,7 @@ router.use('/categories', require('./categories'));
 router.use('/tags', require('./tags'));
 router.use('/user', require('./user'));
 router.use('/user_categories', require('./userCategories'));
+router.use('/advertise_events', require('./advertiseEvents'));
 router.all('*', (req, res) => {
     res.status(404).send({msg: 'Not found'});
 });
