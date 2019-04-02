@@ -2,7 +2,7 @@ const User = require('../models/User');
 const Event = require('../models/Event');
 
 async function findEventsByTag(tag) {
-    return await Event.find({tags: [tag]})
+    return await Event.find({'tags': tag})
         .populate('address')
         .populate('user', 'firstName lastName');
 }
