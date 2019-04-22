@@ -14,6 +14,7 @@ async function action(req, res) {
             tags: req.body.tags,
             address: address['_id']
         });
+        
         await EmailService.sendEmail();
         await Index(req, res);
     } catch (err) {
