@@ -19,6 +19,14 @@ module.exports = {
     headers: {
         authToken: 'auth-token'
     },
-
+    smtp: {
+        host: "smtp.mailtrap.io",
+        port: 2525,
+        auth: {
+            user: "90fcbd1a11cf8d",
+            pass: "c287aabbe0cf29"
+        }
+    },
+    emailSender: 'join.me-5a0f06@inbox.mailtrap.io',
     secret: 'join_me_secret_rfn11'
 };

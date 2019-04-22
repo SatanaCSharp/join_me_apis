@@ -1,6 +1,7 @@
 const EventsRepository = require('../../../repositories/EventsRepository');
 const Index = require('./index');
 const storeAddress = require('../address/store');
+const EmailService = require('../../../services/EmailService');
 
 async function action(req, res) {
     try {
@@ -13,6 +14,7 @@ async function action(req, res) {
             tags: req.body.tags,
             address: address['_id']
         });
+        await EmailService.sendEmail();
         await Index(req, res);
     } catch (err) {
         res.sendStatus(500);
