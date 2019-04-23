@@ -3,7 +3,7 @@ const router = express.Router();
 
 router.use('/', require('./greetings'));
 router.use('/auth', require('./auth'));
-router.use('/event_emitters', require('./events'));
+router.use('/events', require('./events'));
 router.use('/categories', require('./categories'));
 router.use('/tags', require('./tags'));
 router.use('/user', require('./user'));
