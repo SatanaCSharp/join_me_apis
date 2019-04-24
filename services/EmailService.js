@@ -3,7 +3,7 @@ const config = require('../config');
 const emailTemplate = require('../templates/email');
 
 async function sendEmail(emailData) {
-    let transporter = nodeMailer.createTransport(config.smtp);
+    let transporter = await nodeMailer.createTransport(config.smtp);
     await transporter.sendMail({
         from: '"Join Me" <site.join.me@gmail.com>',
         to: emailData.to,
