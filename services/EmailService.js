@@ -5,7 +5,7 @@ const emailTemplate = require('../templates/email');
 async function sendEmail(emailData) {
     let transporter = await nodeMailer.createTransport(config.smtp);
     await transporter.sendMail({
-        from: '"Join Me" <site.join.me@gmail.com>',
+        from: config.emailSender,
         to: emailData.to,
         subject: emailData.subject,
         text: emailData.text,

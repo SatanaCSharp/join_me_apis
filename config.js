@@ -20,13 +20,12 @@ module.exports = {
         authToken: 'auth-token'
     },
     smtp: {
-        host: "smtp.mailtrap.io",
-        port: 2525,
+        service: 'gmail',
         auth: {
-            user: "90fcbd1a11cf8d",
-            pass: "c287aabbe0cf29"
+            user: 'site.join.me@gmail.com',
+            pass: '13Swat13'
         }
     },
-    emailSender: 'join.me-5a0f06@inbox.mailtrap.io',
+    emailSender: 'site.join.me@gmail.com',
     secret: 'join_me_secret_rfn11'
 };
