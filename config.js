@@ -26,6 +26,10 @@ module.exports = {
             pass: '13Swat13'
         }
     },
+    facebook: {
+        FACEBOOK_APP_ID: '282189916002200',
+        FACEBOOK_APP_SECRET: 'a924f9c3ccd684e3215476896e249c88',
+    },
     emailSender: 'site.join.me@gmail.com',
     secret: 'join_me_secret_rfn11'
 };

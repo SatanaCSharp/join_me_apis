@@ -10,6 +10,9 @@ const UserSchema = new Schema({
         required: true,
         unique: true
     },
+    social: {
+        type: String
+    },
     firstName: {
         type: String,
         required: true,
@@ -18,9 +21,9 @@ const UserSchema = new Schema({
         type: String,
         required: true,
     },
-    categories:[{
-       type: Schema.Types.ObjectId,
-       ref: 'Category'
+    categories: [{
+        type: Schema.Types.ObjectId,
+        ref: 'Category'
     }],
     hash: String,
     salt: String,
