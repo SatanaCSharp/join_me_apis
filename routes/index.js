@@ -4,6 +4,7 @@ const router = express.Router();
 router.use('/', require('./greetings'));
 router.use('/auth', require('./auth'));
 router.use('/facebook', require('./authFacebook'));
+router.use('/google', require('./authGoogle'));
 router.use('/events', require('./events'));
 router.use('/categories', require('./categories'));
 router.use('/tags', require('./tags'));

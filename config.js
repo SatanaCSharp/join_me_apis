@@ -30,6 +30,10 @@ module.exports = {
         FACEBOOK_APP_ID: '282189916002200',
         FACEBOOK_APP_SECRET: 'a924f9c3ccd684e3215476896e249c88',
     },
+    google: {
+        clientID: '102620030943-o0q7fn1j47d51u1bnrul7s05openht2p.apps.googleusercontent.com',
+        clientSecret: 'OEaI6WNmouG2iM-zfXt0quxK',
+    },
     emailSender: 'site.join.me@gmail.com',
     secret: 'join_me_secret_rfn11'
 };
