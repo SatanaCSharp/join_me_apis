@@ -1,14 +1,16 @@
+require('dotenv').config();
+
 module.exports = {
     server: {
-        host: '127.0.0.1',
-        port: 4000
+        host: process.env.HOST,
+        port: process.env.PORT
     },
 
-    baseUrl: 'http://localhost:4000',
+    baseUrl: process.env.BASE_URL,
 
     db: {
         mongo: {
-            url: 'mongodb://localhost:27017/join_me'
+            url:  process.env.DB_MONGO_URL
         },
     },
 
@@ -22,18 +24,18 @@ module.exports = {
     smtp: {
         service: 'gmail',
         auth: {
-            user: 'site.join.me@gmail.com',
-            pass: '13Swat13'
+            user: process.env.SMTP_AUTH_USER,
+            pass: process.env.SMTP_AUTH_PASS
         }
     },
     facebook: {
-        FACEBOOK_APP_ID: '282189916002200',
-        FACEBOOK_APP_SECRET: 'a924f9c3ccd684e3215476896e249c88',
+        FACEBOOK_APP_ID: process.env.FACEBOOK_APP_ID,
+        FACEBOOK_APP_SECRET: process.env.FACEBOOK_APP_SECRET,
     },
     google: {
-        clientID: '102620030943-o0q7fn1j47d51u1bnrul7s05openht2p.apps.googleusercontent.com',
-        clientSecret: 'OEaI6WNmouG2iM-zfXt0quxK',
+        clientID: process.env.GOOGLE_CLIENT_ID,
+        clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     },
-    emailSender: 'site.join.me@gmail.com',
-    secret: 'join_me_secret_rfn11'
+    emailSender: process.env.EMAIL_SENDER,
+    secret: process.env.APP_SECRET
 };
