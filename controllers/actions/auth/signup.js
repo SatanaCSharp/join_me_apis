@@ -1,10 +1,12 @@
 const User = require('../../../models/User');
+const config = require('../../../config');
 
 function signUp(req, res) {
     const user = new User({
         firstName: req.body.firstName,
         lastName: req.body.lastName,
-        email: req.body.email
+        email: req.body.email,
+        avatar: `${config.baseUrl}/uploads/default_avatar.png`
     });
 
     user.setPassword(req.body.password);
