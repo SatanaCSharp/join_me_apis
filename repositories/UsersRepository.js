@@ -33,7 +33,7 @@ async function socialFindOrCreate(social, profile) {
         avatar: profile.photos[0].value
     });
     await user.save();
-    return user;
+    return {user: user.authJSON()};
 }
 
 module.exports = {
