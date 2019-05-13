@@ -25,6 +25,10 @@ const UserSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: 'Category'
     }],
+    avatar: {
+        type: String,
+        required: true
+    },
     hash: String,
     salt: String,
     createdAt: {
