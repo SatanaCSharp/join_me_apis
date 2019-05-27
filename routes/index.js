@@ -10,6 +10,7 @@ router.use('/categories', require('./categories'));
 router.use('/tags', require('./tags'));
 router.use('/user', require('./user'));
 router.use('/user_categories', require('./userCategories'));
+router.use('/user_events', require('./userEvents'));
 router.use('/advertise_events', require('./advertiseEvents'));
 router.use('/participants', require('./participants'));
 router.use('/uploads', express.static('uploads'));
