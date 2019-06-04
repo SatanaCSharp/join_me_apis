@@ -14,6 +14,7 @@ router.use('/user_events', require('./userEvents'));
 router.use('/advertise_events', require('./advertiseEvents'));
 router.use('/participants', require('./participants'));
 router.use('/uploads', express.static('uploads'));
+router.use( express.static('public'));
 router.all('*', (req, res) => {
     res.status(404).send({msg: 'Not found'});
 });
