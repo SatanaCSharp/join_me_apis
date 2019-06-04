@@ -27,8 +27,8 @@ function run() {
     app.use(routes);
 
 
-    app.listen(config.server.port, config.server.host, () => {
-        console.log(`app running on http://${config.server.host}:${config.server.port}`);
+    app.listen(config.server.port, () => {
+        console.log(`app running on http://${config.server.port}`);
     });
 }
 
