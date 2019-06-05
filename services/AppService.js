@@ -16,7 +16,7 @@ function run() {
 
     mongoose.set('useCreateIndex', true);
     mongoose.connect(config.db.mongo.url, {
-        useNewUrlParser: true
+        dbName: 'join_me'
     });
 
     app.use(bodyParser.urlencoded({extended: true}));

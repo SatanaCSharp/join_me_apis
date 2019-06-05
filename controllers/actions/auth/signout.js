@@ -1,4 +1,4 @@
-function signOut(req, res) {
+async function signOut(req, res) {
     req.logout();
     res.redirect('/');
 }
