@@ -39,5 +39,3 @@ module.exports = {
     emailSender: process.env.EMAIL_SENDER,
     secret: process.env.APP_SECRET
 };
- PM2_PUBLIC_KEY = dq8acgq2pz1x2sy;
- PM2_SECRET_KEY = z55mlsp6enr5zfz;
