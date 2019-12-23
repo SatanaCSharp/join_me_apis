@@ -16,7 +16,9 @@ function run() {
 
     mongoose.set('useCreateIndex', true);
     mongoose.connect(config.db.mongo.url, {
-        dbName: 'join_me'
+        dbName: 'join_me',
+        useNewUrlParser: true,
+        useUnifiedTopology: true
     });
 
     app.use(bodyParser.urlencoded({extended: true}));
@@ -28,7 +30,7 @@ function run() {
 
 
     app.listen(config.server.port, () => {
-        console.log(`app running on http://${config.server.port}`);
+        console.log(`app running on http://localhost/${config.server.port}`);
     });
 }
 

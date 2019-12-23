@@ -1,0 +1,15 @@
+{
+  "apps": [
+    {
+      "name": "app",
+      "script": "./server.js",
+      "watch": true,
+      "exec_mode": "cluster",
+      "instances": "max",
+      "env": {
+        "NODE_ENV": "production",
+        "MONGO_CONNECTION_STRING":"mongodb+srv://apiJoinMe:1Qwer410@cluster0-fuwfp.mongodb.net/test?retryWrites=true&w=majority"
+      }
+    }
+  ]
+}
